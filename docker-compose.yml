@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+    app:
+        build: .
+        container_name: "go-crud-app"
+        ports:
+            - "5000:5000"
+        command: >
+            /bin/sh -c "
+              while ! nc -z -w1 redis 6379;
+              do
+                echo waiting for redis...;
+                sleep 1;
+              done;
+              echo redis is ready!;
+              ./main
+              "
+        depends_on:
+            - redis
+        networks:
+            - fullstack
+    redis:
+        image: redis:alpine
+        container_name: "redis-db"
+        ports:
+            - "6379:6379"
+        networks:
+            - fullstack
+
+networks:
+    fullstack:
+        driver: bridge

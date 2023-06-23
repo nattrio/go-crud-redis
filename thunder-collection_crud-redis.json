@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "crud-redis",
+    "dateExported": "2023-06-23T14:34:52.086Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0fa52b7d-abc9-4e53-88a7-9ffb5ec85831",
+            "colId": "1a1d16a0-9887-40b6-a44d-75a2ed677683",
+            "containerId": "",
+            "name": "Create Movie",
+            "url": "http://localhost:5000/movies",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-22T07:33:17.953Z",
+            "modified": "2023-06-22T07:36:15.551Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"John Wick\",\n  \"description\": \"Gangster\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce0d59be-8cfa-4a61-81f4-cfdefddb9eef",
+            "colId": "1a1d16a0-9887-40b6-a44d-75a2ed677683",
+            "containerId": "",
+            "name": "Get Movie",
+            "url": "http://localhost:5000/movies/70ce775e-0735-4e67-a18d-cfbfabb6b204",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-22T07:36:34.560Z",
+            "modified": "2023-06-23T14:27:02.447Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9ba18dbc-822f-4efe-9533-27ed7d89e823",
+            "colId": "1a1d16a0-9887-40b6-a44d-75a2ed677683",
+            "containerId": "",
+            "name": "Get Movies",
+            "url": "http://localhost:5000/movies",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-22T07:39:51.462Z",
+            "modified": "2023-06-22T07:40:20.076Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "449f8c3d-fc0e-41a1-980a-a56c5ca33150",
+            "colId": "1a1d16a0-9887-40b6-a44d-75a2ed677683",
+            "containerId": "",
+            "name": "Update Movie",
+            "url": "http://localhost:5000/movies/70ce775e-0735-4e67-a18d-cfbfabb6b204",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-06-23T14:28:41.725Z",
+            "modified": "2023-06-23T14:30:43.750Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"John Wick\",\r\n  \"description\": \"Gangster Mafia\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cc16c025-2817-4413-a2dc-2c45b5487495",
+            "colId": "1a1d16a0-9887-40b6-a44d-75a2ed677683",
+            "containerId": "",
+            "name": "Delete Movie",
+            "url": "http://localhost:5000/movies/70ce775e-0735-4e67-a18d-cfbfabb6b204",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-06-23T14:31:11.607Z",
+            "modified": "2023-06-23T14:32:05.312Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
